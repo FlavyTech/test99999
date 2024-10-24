@@ -1,0 +1,35 @@
+/* Hero section animations */
+.hero-title {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s ease forwards;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--luxury-gold);
+}
+
+.hero-subtitle {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease 0.3s forwards;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Parallax effect */
+.parallax {
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+}
