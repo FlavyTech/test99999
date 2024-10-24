@@ -1,0 +1,182 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <!-- Video background -->
+    <div class="video-background">
+        <iframe 
+            src="https://www.youtube.com/embed/sJrWbxq3y2I?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=sJrWbxq3y2I&mute=1" 
+            frameborder="0" 
+            allowfullscreen 
+            class="video-iframe"
+        ></iframe>
+    </div>
+    <!-- End of Video background -->
+    
+    <div class="container">
+        <h1 class="hero-title" data-aos="fade-up">Lendel Custom Homes</h1>
+        <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">Crafting Luxury Spaces</p>
+        <a href="{{ url_for('gallery') }}" class="btn btn-outline-light btn-lg" data-aos="fade-up" data-aos-delay="400">
+            View Our Projects
+        </a>
+    </div>
+</section>
+
+<section class="features">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4" data-aos="fade-up">
+                <h3>Bespoke Design</h3>
+                <p>Tailored architectural solutions that reflect your unique vision and lifestyle.</p>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                <h3>Master Craftsmanship</h3>
+                <p>Unparalleled attention to detail and superior building techniques.</p>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+                <h3>Timeless Quality</h3>
+                <p>Creating spaces that stand the test of time in both style and structure.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="services">
+    <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Our Services</h2>
+        <div class="row">
+            <div class="col-md-4" data-aos="fade-up">
+                <div class="service-card">
+                    <h3>Custom Homes</h3>
+                    <p>Bespoke residential projects tailored to your lifestyle and dreams.</p>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-card">
+                    <h3>Renovations</h3>
+                    <p>Transform existing spaces into modern masterpieces.</p>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="service-card">
+                    <h3>Commercial</h3>
+                    <p>Sophisticated commercial spaces that elevate your brand.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="process">
+    <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Our Process</h2>
+        <div class="timeline">
+            <div class="timeline-item" data-aos="fade-right">
+                <h3>Initial Consultation</h3>
+                <p>Understanding your vision and requirements</p>
+            </div>
+            <div class="timeline-item" data-aos="fade-left">
+                <h3>Design Phase</h3>
+                <p>Creating detailed plans and 3D visualizations</p>
+            </div>
+            <div class="timeline-item" data-aos="fade-right">
+                <h3>Construction</h3>
+                <p>Building with precision and excellence</p>
+            </div>
+            <div class="timeline-item" data-aos="fade-left">
+                <h3>Final Delivery</h3>
+                <p>Ensuring perfection in every detail</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="stats">
+    <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Project Highlights</h2>
+        <div class="row">
+            <div class="col-md-3" data-aos="fade-up">
+                <div class="stats-card">
+                    <div class="stats-number">150+</div>
+                    <p>Projects Completed</p>
+                </div>
+            </div>
+            <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+                <div class="stats-card">
+                    <div class="stats-number">25</div>
+                    <p>Years Experience</p>
+                </div>
+            </div>
+            <div class="col-md-3" data-aos="fade-up" data-aos-delay="400">
+                <div class="stats-card">
+                    <div class="stats-number">98%</div>
+                    <p>Client Satisfaction</p>
+                </div>
+            </div>
+            <div class="col-md-3" data-aos="fade-up" data-aos-delay="600">
+                <div class="stats-card">
+                    <div class="stats-number">45</div>
+                    <p>Awards Won</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="certifications">
+    <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Certifications & Credentials</h2>
+        <div class="row">
+            <div class="col-md-4" data-aos="fade-up">
+                <div class="cert-card">
+                    <div class="cert-icon">🏆</div>
+                    <h3>LEED Certified</h3>
+                    <p>Leadership in Energy and Environmental Design</p>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="cert-card">
+                    <div class="cert-icon">🌟</div>
+                    <h3>Master Builder</h3>
+                    <p>Certified Master Builder Association</p>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="cert-card">
+                    <div class="cert-icon">📋</div>
+                    <h3>ISO 9001</h3>
+                    <p>Quality Management System</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="equipment">
+    <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Equipment & Technology</h2>
+        <div class="row">
+            <div class="col-md-4" data-aos="fade-up">
+                <div class="equipment-card">
+                    <h3>3D Modeling</h3>
+                    <p>State-of-the-art BIM technology for precise planning</p>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="equipment-card">
+                    <h3>Smart Home Integration</h3>
+                    <p>Advanced home automation systems</p>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="equipment-card">
+                    <h3>Eco-Technology</h3>
+                    <p>Sustainable building practices and materials</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}Gallery{% endblock %}
+
+{% block content %}
+<div class="gallery-container">
+    <div id="gallery-3d" class="gallery-viewer"></div>
+    <div class="gallery-controls">
+        <button class="btn btn-outline-light prev-btn">Previous</button>
+        <button class="btn btn-outline-light next-btn">Next</button>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{{ url_for('static', filename='js/gallery.js') }}"></script>
+{% endblock %}
